@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4-Way Junction Simulator</title>
+    <link rel="stylesheet" href="/4-way_junction/style.css" />
+</head>
+<body>
+    <div class="root">
+        <h1>Junction Simulator</h1>
+        <div>
+            <div class="master-grid">
+
+                <!-- master row1 -->
+                <div class="light-grid">
+                    <!-- West light row1 -->
+                    <div class="item filter horizontal left" id="west-left">&#9650;</div>
+                    <div class="blank"></div>
+                    <div class="blank"></div>
+                    <!-- West light row2 -->
+                    <div class="item filter horizontal straight" id="west-straight">&gt;</div>
+                    <div class="item amber horizontal" id="west-amber"></div>
+                    <div class="item red horizontal lit" id="west-red"></div>
+                    <!-- West light row3 -->
+                    <div class="item filter horizontal right" id="west-right">&#9660;</div>
+                    <div class="blank"></div>
+                    <div class="blank"></div>
+                </div>
+                <div class="road-v"></div>
+                <div class="light-grid">
+                    <!-- North light row1 -->
+                    <div class="item filter vertical right" id="north-right">&lt;</div>
+                    <div class="item filter vertical straight" id="north-straight">&#9660;</div>
+                    <div class="item filter vertical left" id="north-left">&gt;</div>
+                    <!-- North light row2 -->
+                    <div class="blank"></div>
+                    <div class="item amber vertical" id="north-amber"></div>
+                    <div class="blank"></div>
+                    <!-- North light row3 -->
+                    <div class="blank"></div>
+                    <div class="item red vertical lit" id="north-red"></div>
+                    <div class="blank"></div>
+                </div>
+
+                <!-- master row2 -->
+                <div class="road-h"></div>
+                <div class="road-m"></div>
+                <div class="road-h"></div>
+
+                <!-- mast row3 -->
+                <div class="light-grid">
+
+                    <!-- South light row1 -->
+                    <div class="blank"></div>
+                    <div class="item red vertical lit" id="south-red"></div>
+                    <div class="blank"></div>
+                    <!-- South light row2 -->
+                    <div class="blank"></div>
+                    <div class="item amber vertical" id="south-amber"></div>
+                    <div class="blank"></div>
+                    <!-- South light row3 -->
+                    <div class="item filter vertical left" id="south-left">&lt;</div>
+                    <div class="item filter vertical straight" id="south-straight">&#9650;</div>
+                    <div class="item filter vertical right" id="south-right">&gt;</div>
+                </div>
+                <div class="road-v">
+
+                </div>
+                <div class="light-grid">
+                    <!-- East light row1 -->
+                    <div class="blank"></div>
+                    <div class="blank"></div>
+                    <div class="item filter horizontal right" id="east-right">&#9650;</div>
+                    <!-- East light row2 -->
+                    <div class="item red horizontal lit" id="east-red"></div>
+                    <div class="item amber horizontal" id="east-amber"></div>
+                    <div class="item filter horizontal straight" id="east-straight">&lt;</div>
+                    <!-- East light row3 -->
+                    <div class="blank"></div>
+                    <div class="blank"></div>
+                    <div class="item filter horizontal left" id="east-left">&#9660;</div>
+                </div>
+            </div>
+            <div class="control-panel">
+                <button id="play">Play</button>
+                <button id="stop">Stop</button><br>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/4-way_junction/script.js"></script>
+</body>
+</html>
